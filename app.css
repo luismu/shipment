@@ -1,3 +1,9 @@
+/* 
+  #f78a00 naranja
+  #f5464e rojo
+  #858585 gris letras
+*/
+
 body{
   background-color: #e6e6e6 !important;
 }
@@ -56,10 +62,27 @@ body{
   margin-top: 2%;
 }
 
+.float{
+  position:fixed;
+  width:100px;
+  height:100px;
+  bottom:40px;
+  right:40px;
+  background-color:#f78a00;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  
+}
 
-a:link{ color: #00FF00; text-decoration: none}
+.my-float{
+  margin-top:22px;
+}
+
+
+/*a:link{ color: #00FF00; text-decoration: none}
 
 
 
-a:visited{ color: #000000; text-decoration: none}
+a:visited{ color: #000000; text-decoration: none}*/
 
