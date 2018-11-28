@@ -2,6 +2,7 @@
   #f78a00 naranja
   #f5464e rojo
   #858585 gris letras
+  #686868 gris
 */
 
 body{
@@ -59,8 +60,30 @@ body{
 }
 
 .row{
-  margin-top: 2%;
+  margin-top: 3%;
+
 }
+
+.smart-filter-text{
+  font-size: 20px;
+  color: #858585 !important;
+}
+
+.hor-separator{
+  border: 1px solid #686868 !important;
+  width: 220px;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ver-separator{
+  border-right: 1px solid #686868 !important;
+  
+  width: 1px;
+  padding-right: 0px !important;
+}
+
 
 .float{
   position:fixed;
@@ -79,7 +102,102 @@ body{
   margin-top:22px;
 }
 
+.filter-switch{
 
+}
+
+/* toggle*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 82px;
+  height: 42px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  left: 18px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #10394d;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #10394d;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.status-section{
+  display: table-caption;
+  text-align: center;
+}
+
+.input-status{
+  margin-top: 10px;
+  margin-bottom: 35px;
+  height: 60px;
+  width: 230px;
+  display: block;
+  margin-right: 0px;
+  margin-left: 18px;
+}
+
+a.btn-delivered {
+width: 500px;
+padding: 20 55 20 55;
+
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+background: white;
+color: #10394d;
+border: 1px solid #10394d;
+margin-right: 30px;
+}
+
+a.btn-delivered:hover{
+  text-decoration: none;
+}
 /*a:link{ color: #00FF00; text-decoration: none}
 
 
