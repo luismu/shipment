@@ -103,7 +103,8 @@ body{
 }
 
 .filter-switch{
-
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 /* toggle*/
