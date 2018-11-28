@@ -16,20 +16,20 @@ $routeProvider
   .when("/message", {
     
     templateUrl: "template/message.html",
-    controller: "messageController",
-    controllerAs: "messageCtrl"
+    controller: "messageController"
+    
   })
   .when("/wishlist", {
     
     templateUrl: "template/wishlist.html",
-    controller: "wishlistController",
-    controllerAs: "wishlistCtrl"
+    controller: "wishlistController"
+    
   })
   .when("/setting", {
     
     templateUrl: "template/setting.html",
-    controller: "settingController",
-    controllerAs: "settingCtrl"
+    controller: "settingController"
+    
   })
   .when("/account", {
     
@@ -95,6 +95,17 @@ app.controller('accountController', function($scope){
 
 });
 
+app.controller('settingController', function($scope){
+
+});
+
+app.controller('wishlistController', function($scope){
+
+});
+
+app.controller('messageController', function($scope){
+
+});
 
 
 
